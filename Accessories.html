@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <style>
+        #nav {
+            height: 100px;
+        }
+
+        #nav ul {
+            background-color: white;
+            border: 5px;
+            word-spacing: 30px;
+            float: right;
+        }
+
+        #nav ul li a:hover {
+            color: black;
+
+        }
+
+        #nav li a {
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            width: 500px;
+            font-size: larger;
+            padding-left: 0px;
+            text-align: right;
+            color: #000080;
+        }
+
+
+        #nav ul li {
+            margin-top: 5px;
+            margin-bottom: 10px;
+            display: inline-block;
+            height: 20px;
+            position: relative;
+            padding: 5px;
+            border-radius: 5px;
+            text-align: center;
+            background-color: white;
+            color: black;
+            text-decoration: none;
+            display: inline-block;
+            position: relative;
+            padding-right: 60px;
+        }
+
+        #header {
+            display: flex;
+            align-items: center;
+
+            justify-content: space-between;
+            box-shadow: 0 5px 15px rgb(0 0 0 0.06);
+            padding-right: 50px;
+
+        }
+
+        #nav ul li a:hover,
+        #nav ul li a:hover {
+            color: black;
+        }
+
+        #nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 0px;
+        }
+
+        #d1 .d2 .d3 {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+            flex-wrap: wrap;
+            display: inline-block;
+            flex-wrap: wrap;
+            margin-left: 80px;
+            margin-bottom: 300px;
+
+        }
+
+        #d1 .d2 .d3 img {
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+
+        }
+
+        #d1 .d2 .d3 button {
+            border: none;
+            outline: 0;
+            padding: 12px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 10px;
+            margin-bottom: 10px;
+        }
+
+        #d1 .d2 .d3 button:hover {
+            opacity: 0.7;
+        }
+
+        #d4 .d5 .d6 {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+            flex-wrap: wrap;
+            display: inline-block;
+            flex-wrap: wrap;
+            margin-left: 80px;
+            margin-bottom: 300px;
+
+        }
+
+        #d4 .d5 .d6 img {
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+
+
+        }
+
+        #d4 .d5 .d6 button {
+            border: none;
+            outline: 0;
+            padding: 12px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 10px;
+
+        }
+
+        #d4 .d5 .d6 button:hover {
+            opacity: 0.7;
+        }
+
+        .footer-flex {
+            margin-top: 10px;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .bg-dark {
+            background: rgb(26, 25, 25);
+        }
+
+        .col,
+        .fs-1 {
+            color: rgb(211, 210, 210) !important;
+        }
+
+        .icons {
+            height: 30px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+        }
+
+        .icons a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .icons a i {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            background-color: rgb(223, 75, 6);
+            color: black;
+            border-radius: 3px;
+            width: 30px;
+            font-size: 20px;
+        }
+
+        .icons a:hover {
+            text-decoration: none !important;
+        }
+
+        .col p a i {
+            color: aliceblue;
+        }
+
+        .col p a:hover {
+            color: #000080 !important;
+            text-decoration: none !important;
+            margin-left: 5px !important;
+        }
+
+        .foot {
+            height: 70px;
+            background: #000080 !important;
+            color: rgb(146, 147, 148);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .inp {
+            width: 65%;
+            height: 30px;
+            outline: none;
+            border: 1px solid rgb(73, 201, 252);
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+
+        }
+
+        .inp:focus {
+            outline: none;
+            border: 1px solid rgb(73, 201, 252);
+            box-shadow: 0px 1px 5px 0 rgba(28, 215, 240, 0.452);
+        }
+
+        .btn {
+            border-radius: 0px !important;
+            border-top-right-radius: 3px !important;
+            border-bottom-right-radius: 3px !important;
+        }
+
+        .home-font {
+            font-weight: bolder;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            letter-spacing: 0px;
+            color: rgb(27, 22, 22);
+            font-size: 50px;
+        }
+
+        .btn-dark {
+            background: #000;
+            color: #fff;
+            text-transform: uppercase;
+            width: 120px;
+            border-radius: 3px !important;
+        }
+
+        .home-1 {
+            margin-left: 6%;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .img-margin {
+            filter: grayscale(100%);
+
+        }
+
+        #list-link .ulli {
+            height: 60px;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+        }
+
+        #list-link .ulli :hover {
+            background-color: #000080 !important;
+            text-decoration: none !important;
+            color: #000;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+
+        /* Button used to open the contact form - fixed at the bottom of the page */
+        .open-button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            opacity: 0.8;
+            position: top;
+            margin: 5px;
+            bottom: 23px;
+            right: 28px;
+            width: 100px;
+        }
+
+        /* The popup form - hidden by default */
+        .form-popup {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            right: 15px;
+            border: 3px solid #f1f1f1;
+            z-index: 9;
+        }
+
+        /* Add styles to the form container */
+        .form-container {
+            max-width: 300px;
+            padding: 10px;
+            background-color: white;
+        }
+
+        /* Full-width input fields */
+        .form-container input[type=text],
+        .form-container input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        /* When the inputs get focus, do something */
+        .form-container input[type=text]:focus,
+        .form-container input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+        /* Set a style for the submit/login button */
+        .form-container .btn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 10px;
+            opacity: 0.8;
+        }
+
+        /* Add a red background color to the cancel button */
+        .form-container .cancel {
+            background-color: red;
+        }
+
+        /* Add some hover effects to buttons */
+        .form-container .btn:hover,
+        .open-button:hover {
+            opacity: 1;
+        }
+
+        .c0 {
+            font-size: 1.8rem;
+        }
+
+        .fontStyle {
+            font-size: 2.5rem;
+            border-left: 2px solid yellow;
+            padding: 5px;
+            color: gold;
+        }
+
+        #d1 .d2 .d3 img:hover {
+            border: 2px solid black;
+            box-shadow: 2px 2px 2px 2px;
+
+        }
+
+        #d4 .d5 .d6 img:hover {
+            border: 2px solid black;
+            box-shadow: 2px 2px 2px 2px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <img src="https://www.marshallspetzone.com/img/marshallspetzone-logo-1551438443.jpg" class="logo" alt="">
+        <div id="nav">
+            <ul>
+                <li><a href="../project/dogs.html">DOGS</a></li>
+                <li style="height:20px;width:70px"><a href="../project/cats.html" style="font-size:medium;">CATS</a>
+                </li>
+                <li><a href="../project/Accessories.html" style="font-size:medium;">ACCESSORIES</a> </li>
+                <li><a href="../project/deals.html" style="font-size:medium;">SUPERSAVERDEALS</a> </li>
+
+                <li><a href="../project/login.html" style="font-size:medium;">LOGIN</a> </li>
+                <li><a href="#"><i style="font-size:24px" class="fa">&#xf07a;</i></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div id="d1">
+        <div class="d2">
+            <div class="d3">
+                <img src="https://www.petsworld.in/pub/media/catalog/product/cache/2765542505660baab28ecd555e27366e/g/4/g4knotted10front.jpg"
+                    alt="Denim Jeans" style="width:100%">
+                <h5>Gnawlers 4" Knotted bone</h5>
+                <p class="price">Rs.607.00</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+            <div class="d3">
+                <img src="https://www.petsworld.in/pub/media/catalog/product/cache/2765542505660baab28ecd555e27366e/n/a/natural-chostix.jpg"
+                    alt="Denim Jeans" style="width:100%">
+                <h5>Choostix Natural Stylam 450 gms</h5>
+                <p class="price">Rs.180.00</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+            <div class="d3">
+                <img src="https://www.petsworld.in/pub/media/catalog/product/cache/2765542505660baab28ecd555e27366e/a/l/all4petplasmuzlar.jpg"
+                    alt="Denim Jeans" style="width:100%">
+                <h5>All4Pets Plastic Muzzle No. Large</h5>
+                <p class="price">Rs.190.00</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+            <div class="d3">
+                <img src="https://www.petsworld.in/pub/media/catalog/product/cache/2765542505660baab28ecd555e27366e/t/m/tmzle_4.jpg"
+                    alt="Denim Jeans" style="width:100%">
+                <h5>Trixie Nylon Dog Muzzle XLarge 31.25 cm (12.5 inch)</h5>
+                <p class="price">Rs.330.00</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+            <div class="d3">
+                <img src="https://www.petsworld.in/pub/media/catalog/product/cache/2765542505660baab28ecd555e27366e/a/l/all4petplasmuzmed.jpg"
+                    alt="Denim Jeans" style="width:100%">
+                <h5>All4Pets Plastic Muzzle No. Medium</h5>
+                <p class="price">Rs.167.00</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="d4">
+        <div class="d5">
+            <div class="d6">
+                <img src="https://www.petsworld.in/pub/media/catalog/product/cache/2765542505660baab28ecd555e27366e/a/l/all4petplasmuzxl.jpg"
+                    alt="Denim Jeans" style="width:100%">
+                <h5>All4Pets Plastic Muzzle No. XLarge</h5>
+                <p class="price">Rs.214.00</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+            <div class="d6">
+                <img src="https://www.petsworld.in/pub/media/catalog/product/cache/2765542505660baab28ecd555e27366e/b/e/beaphar-gentle-leader.jpg"
+                    alt="Denim Jeans" style="width:100%">
+                <h5>Beaphar Gentle Leader For Small Dogs and Puppy</h5>
+                <p class="price">Rs.800.00</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+            <div class="d6">
+                <img src="https://www.petsworld.in/pub/media/catalog/product/cache/2765542505660baab28ecd555e27366e/p/e/petbrnitelifeblink.jpg"
+                    alt="Denim Jeans" style="width:100%">
+                <h5>PET BRANDS Nite Life Blinker</h5>
+                <p class="price">Rs.195.00</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+            <div class="d6">
+                <img src="https://www.petsworld.in/pub/media/catalog/product/cache/2765542505660baab28ecd555e27366e/p/e/petbrtreattotebagblue.jpg"
+                    alt="Denim Jeans" style="width:100%">
+                <h5>PET BRANDS Treat Tote Bag Blue</h5>
+                <p class="price">Rs.850.00</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+            <div class="d6">
+                <img src="https://www.petsworld.in/pub/media/catalog/product/cache/2765542505660baab28ecd555e27366e/o/u/out-house1.jpg"
+                    alt="Denim Jeans" style="width:100%">
+                <h5>PetCare OUT Puppy Toilet Training Spray For Puppies 500 ml</h5>
+                <p class="price">Rs.750.00</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer">
+        <div class="row bg-dark">
+            <div class="col-md-3">
+                <div class="bg-dark footer-flex">
+                    <div class="col">
+                        <!-- <h1 class="fs-1" ><i class="fa fa-graduation-cap fa" aria-hidden="true" style="color:#04AA6D;padding-right: 20%;margin-left:5%;margin-top: 10px;font-size: 30px;"<p>EDUCAT</p></i><i></i></h1> -->
+                        <img src="https://www.marshallspetzone.com/img/marshallspetzone-logo-1551438443.jpg"
+                            class="logo" alt="" style="margin-bottom:10px">
+                        <p style="color:rgb(148, 147, 147);">Your Profile
+                            COPS Rewards Program
+                            Wishlist
+                            Your Orders
+                            PetZone Wallet</p>
+                        <h5 style="font-family: Haettenschweiler;letter-spacing:1.5px;color:rgb(148, 147, 147);">FOLLOW
+                            US</h5>
+                        <div class="icons">
+                            <a href=""><i class="fa fa-facebook"></i></a>
+                            <a href=""><i class="fa fa-rss"></i></a>
+                            <a href=""><i class="fa fa-google-plus"></i></a>
+                            <a href=""><i class="fa fa-pinterest-p"></i></a>
+                            <a href=""><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="bg-dark footer-flex">
+                    <div class="col">
+                        <h1 class="fs-2">GET IN TOUCH</h1>
+                        <p style="color:rgb(148, 147, 147);"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;
+                            +91&nbsp;1234567890</p>
+                        <p style="color:rgb(148, 147, 147);"><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;
+                            xyz@gmail.com</p>
+                        <p style="color:rgb(148, 147, 147);"><i class="fa-solid fa-globe"></i>&nbsp;&nbsp;
+                            www.example.com</p>
+                        <p style="color:rgb(148, 147, 147);"><i class="fa-solid fa-location-pin"></i>&nbsp;&nbsp;
+                            Surampalem,AndhraPradesh,India</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="bg-dark footer-flex">
+                    <div class="col">
+                        <h1 class="fs-2">USEFUL LINKS</h1>
+                        <p> <a href=""><i class="fa-solid fa-angle-right"></i>&nbsp;&nbsp; Shop for Dogs</a> </p>
+                        <p> <a href=""><i class="fa-solid fa-angle-right"></i>&nbsp;&nbsp; Shop for Cats</a> </p>
+                        <p> <a href=""><i class="fa-solid fa-angle-right"></i>&nbsp;&nbsp; Pet Parent</a> </p>
+                        <p> <a href=""><i class="fa-solid fa-angle-right"></i>&nbsp;&nbsp; Support</a> </p>
+                        <p> <a href=""><i class="fa-solid fa-angle-right"></i>&nbsp;&nbsp; Terams & Conditions</a> </p>
+                        <p> <a href=""><i class="fa-solid fa-angle-right"></i>&nbsp;&nbsp; Privacy Policy</a> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="bg-dark footer-flex">
+                    <div class="col">
+                        <form action="" style="display: flex;justify-content:center;align-items:center;">
+                            <input class="inp" type="email" name="" id="" style="color:black" ;>
+                            <button class="btn btn-success"
+                                style="width:auto;height:30px; color:black;font-family:Verdana, Geneva, Tahoma, sans-serif;font-weight:bolder;">Subscribe</button>
+                        </form>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="fs-2">INSTAGRAM</h1>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="col-md-4">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1vf9CfGgC3PVpUFGnJeGjs194C-q1H3I1Dw&usqp=CAU"
+                                            style="height:60px">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKRL3Fz9OLfv6XC4nUqcLZPzmvVD44TfwiHw&usqp=CAU"
+                                            style="height:60px">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvEZU9fdo6h1C5friz2uHt6UlbKPNaWXx15g&usqp=CAU"
+                                            style="height:60px">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <h1 class="fs-2"></h1>
+                                    <div class="col-md-4">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1vf9CfGgC3PVpUFGnJeGjs194C-q1H3I1Dw&usqp=CAU"
+                                            style="height:60px">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKRL3Fz9OLfv6XC4nUqcLZPzmvVD44TfwiHw&usqp=CAU"
+                                            style="height:60px">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvEZU9fdo6h1C5friz2uHt6UlbKPNaWXx15g&usqp=CAU"
+                                            style="height:60px">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid foot">
+        <p style="padding: 0; margin:0; font-size:16px; color:#ddd"> © <span style="color:white">Site Name</span> All
+            Rights Reserved &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy policy &nbsp; Terms and Conditions</p>
+    </div>
+
+
+</body>
+
+</html>

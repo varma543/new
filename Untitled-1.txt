@@ -1,0 +1,12 @@
+class solutions:
+    def logestCommonprefix(self,arr,n):
+        minstr=min(arr,key=len)
+        x=len(minstr)
+        flag=False
+        j=0
+        while(j<x and flag-False):
+            for i in arr:
+                if(i.startswith(minstr)):
+                    flag = False
+                else:
+                    

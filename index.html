@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+    #nav {
+        height: 100px;
+    }
+
+    #nav ul {
+        background-color: white;
+        border: 5px;
+        word-spacing: 30px;
+        float: right;
+    }
+
+    #nav ul li a:hover {
+        color: black;
+
+    }
+
+    #nav li a {
+        text-decoration: none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        width: 500px;
+        font-size: larger;
+        padding-left: 0px;
+        text-align: right;
+        color: #000080;
+    }
+
+
+    #nav ul li {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        display: inline-block;
+        height: 20px;
+        position: relative;
+        padding: 5px;
+        border-radius: 5px;
+        text-align: center;
+        background-color: white;
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+        padding-right: 60px;
+    }
+
+    #header {
+        display: flex;
+        align-items: center;
+
+        justify-content: space-between;
+        box-shadow: 0 5px 15px rgb(0 0 0 0.06);
+        padding-right: 50px;
+
+    }
+
+    #nav ul li a:hover,
+    #nav ul li a:hover {
+        color: black;
+    }
+
+    #nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0px;
+    }
+
+    #header img {
+        height: 15%;
+        width: 200px;
+        margin-top: 5px;
+        margin-left: 1px;
+    }
+
+    #img img {
+        height: 30%;
+        width: 100%;
+    }
+
+    .abc img {
+        height: 250px;
+        width: 250px;
+        padding-left: 10px;
+        margin-left: 50px;
+    }
+
+    .abc:hover {
+        color: blue;
+    }
+
+    .abc1 img {
+        height: 200px;
+        width: 300px;
+        padding-left: 100px;
+        padding-bottom: 10px;
+        flex-wrap: wrap;
+
+
+    }
+
+    .d1 {
+        align-items: center;
+        padding-left: 130px;
+    }
+
+    .d2 {
+        padding-left: 130px;
+    }
+
+    .d1:hover {
+        color: black;
+    }
+
+    .dogs .d1 img:hover {
+        background-color: black;
+    }
+
+    .carousel-inner img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .footer-flex {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .bg-dark {
+        background: rgb(26, 25, 25);
+    }
+
+    .col,
+    .fs-1 {
+        color: rgb(211, 210, 210) !important;
+    }
+
+    .icons {
+        height: 30px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+    }
+
+    .icons a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icons a i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        background-color: rgb(223, 75, 6);
+        color: black;
+        border-radius: 3px;
+        width: 30px;
+        font-size: 20px;
+    }
+
+    .icons a:hover {
+        text-decoration: none !important;
+    }
+
+    .col p a i {
+        color: aliceblue;
+    }
+
+    .col p a:hover {
+        color: #000080 !important;
+        text-decoration: none !important;
+        margin-left: 5px !important;
+    }
+
+    .foot {
+        height: 70px;
+        background: #000080 !important;
+        color: rgb(146, 147, 148);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .inp {
+        width: 65%;
+        height: 30px;
+        outline: none;
+        border: 1px solid rgb(73, 201, 252);
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+
+    }
+
+    .inp:focus {
+        outline: none;
+        border: 1px solid rgb(73, 201, 252);
+        box-shadow: 0px 1px 5px 0 rgba(28, 215, 240, 0.452);
+    }
+
+    .btn {
+        border-radius: 0px !important;
+        border-top-right-radius: 3px !important;
+        border-bottom-right-radius: 3px !important;
+    }
+
+    .home-font {
+        font-weight: bolder;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        letter-spacing: 0px;
+        color: rgb(27, 22, 22);
+        font-size: 50px;
+    }
+
+    .btn-dark {
+        background: #000;
+        color: #fff;
+        text-transform: uppercase;
+        width: 120px;
+        border-radius: 3px !important;
+    }
+
+    .home-1 {
+        margin-left: 6%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .img-margin {
+        filter: grayscale(100%);
+
+    }
+
+    #list-link .ulli {
+        height: 60px;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    #list-link .ulli :hover {
+        background-color: #000080 !important;
+        text-decoration: none !important;
+        color: #000;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Button used to open the contact form - fixed at the bottom of the page */
+    .open-button {
+        background-color: #04AA6D;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        opacity: 0.8;
+        position: top;
+        margin: 5px;
+        bottom: 23px;
+        right: 28px;
+        width: 100px;
+    }
+
+    /* The popup form - hidden by default */
+    .form-popup {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        right: 15px;
+        border: 3px solid #f1f1f1;
+        z-index: 9;
+    }
+
+    /* Add styles to the form container */
+    .form-container {
+        max-width: 300px;
+        padding: 10px;
+        background-color: white;
+    }
+
+    /* Full-width input fields */
+    .form-container input[type=text],
+    .form-container input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border: none;
+        background: #f1f1f1;
+    }
+
+    /* When the inputs get focus, do something */
+    .form-container input[type=text]:focus,
+    .form-container input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+    }
+
+    /* Set a style for the submit/login button */
+    .form-container .btn {
+        background-color: #04AA6D;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 10px;
+        opacity: 0.8;
+    }
+
+    /* Add a red background color to the cancel button */
+    .form-container .cancel {
+        background-color: red;
+    }
+
+    /* Add some hover effects to buttons */
+    .form-container .btn:hover,
+    .open-button:hover {
+        opacity: 1;
+    }
+
+    .c0 {
+        font-size: 1.8rem;
+    }
+
+    .fontStyle {
+        font-size: 2.5rem;
+        border-left: 2px solid yellow;
+        padding: 5px;
+        color: gold;
+    }
+
+    .heading1 {
+        font-size: 4.3rem;
+        margin-left: 2rem;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #p1 {
+        margin-left: 2rem;
+    }
+
+    #bg {
+        background-color: goldenrod;
+    }
+
+    .heading1 {
+        font-size: 4.3rem;
+        margin-left: 2rem;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #p1 {
+        margin-left: 2rem;
+    }
+
+    .dropdown_menu {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 100%;
+    }
+
+    .dropdown_menu ul {
+        display: block;
+        margin: 10px;
+    }
+
+    .imgg2 {
+        width: 100%;
+    }
+
+    .container .row img:hover {
+        border: 2px solid rgb(240, 176, 57);
+        box-shadow: 2px 2px 2px 2px rgb(240, 176, 57);
+        margin-bottom: 20px;
+
+    }
+     .abc img:hover{
+        border: 2px solid black;
+        box-shadow: 2px 2px 2px 2px rgb(7, 7, 7);
+        margin-bottom: 20px;
+
+    }
+</style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div id="header">
+            <img src="https://www.marshallspetzone.com/img/marshallspetzone-logo-1551438443.jpg" class="logo" alt="">
+            <div id="nav">
+                <ul>
+                    <li><a href="../project/dogs.html" >DOGS</a></li>
+
+                    <li><a href="../project/cats.html" style="font-size:medium;" >CATS</a>
+                    </li>
+                    <li><a href="../project/Accessories.html" style="font-size:medium;" >ACCESSORIES</a> </li>
+                    <li><a href="../project/deals.html" style="font-size:medium;" >SUPERSAVERDEALS</a> </li>
+
+                    <li><a href="../project/login.html" style="font-size:medium;">LOGIN</a> </li>
+                    
+                    <li><a href="#"><i style="font-size:24px" class="fa">&#xf07a;</i></a></li>
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+        <!-- <div class="menu-bar">
+      <h1 class="logo">PET<span>WELL.</span></h1>
+      <ul>
+        <li><a href="#">DOGS<i class="fas fa-caret-down"></i></a></li>
+        <div class="dropdown-menu">
+          <ul>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Portfolio</a></li>
+          </ul>
+        </div>
+        <li><a href="#">CATS</a></li>
+        <li><a href="#">SUPERSAVERDEALS<i class="fas fa-caret-down"></i></a>
+        <li><a href="#">BRANDS</a></li>
+        <li><a href="#">LOGIN/SIGNIP</a></li>
+    
+      </ul>
+    </div> -->
+        <div class="conatiner">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+
+                    <div class="carousel-item">
+                        <img src="https://petsutra.s3.ap-south-1.amazonaws.com/app/uploads/07-03-22/6225e9d96f771.webp"
+                            alt="Chicago" width="1100" height="500">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://petsutra.s3.ap-south-1.amazonaws.com/app/uploads/25-08-22/63074c233f270.webp"
+                            alt="New York" width="1100" height="500">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="../images/pic1.jpg" alt="Los Angeles" width="1100" height="500">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://petsutra.s3.ap-south-1.amazonaws.com/app/uploads/07-03-22/6225e9abc1fba.webp">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://petsutra.s3.ap-south-1.amazonaws.com/app/uploads/07-03-22/6225e9d96f771.webp">
+                    </div>
+
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <center>
+        <h1>SHOP FOR DOGS</h1>
+    </center>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="https://petsutra.s3.ap-south-1.amazonaws.com/app/uploads/21-03-22/ShopForDog.jpg"
+                    class="img-responsive">
+            </div>
+            <div class="col-md-6">
+                <img src="https://petsutra.s3.ap-south-1.amazonaws.com/app/uploads/21-03-22/ShopForCat.jpg"
+                    class="img-responsive">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            </div class="col-md-6 col-md-offset-3">
+                <img src="https://petsutra.s3.ap-south-1.amazonaws.com/app/uploads/21-03-22/ShopForPuupies.jpg" style="width:1100px">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="conatiner">
+        <div><img src="https://petsutra.s3.ap-south-1.amazonaws.com/app/uploads/25-03-22/dfdc-desktop.webp"></div>
+    </div>
+    <div class="conatiner">
+        <div class="abc">
+            <center>
+                <h1>Top Food Brands</h1>
+            </center>
+            <center>
+                <h3>Love a food brand? Find it here!</h3>
+            </center>
+            <img
+                src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/01_heads_up_for_tails_12978673-2c47-486f-bb17-afd74ce8ef68.jpg?v=1659350727">
+            <img
+                src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/03_pedigree_f6f22bfd-749d-4917-8585-42cea186bdb0.png?v=1659955970">
+            <img
+                src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/07_totw_9d22cd59-5fdb-4c51-900f-aa179ba2328a.jpg?v=1658736370">
+            <img
+                src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/02_royal_canin_81889937-3506-4009-bca7-454e5a007bb4.jpg?v=1658736370">
+            <img
+                src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/07_totw_9d22cd59-5fdb-4c51-900f-aa179ba2328a.jpg?v=1658736370">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="imgg2">
+            <img src="https://petsutra.s3.ap-south-1.amazonaws.com/statics/07-10-2021/homepage/petparenting.webp"
+                class="img-responsive" style="width: 100%;">
+        </div>
+    </div>
+    <div class="conatiner">
+        <div class="abc1">
+            <h1>Shop From Top Brands</h1>
+            <img src="https://backend.petsutra.com/app/uploads/01-06-19/5cf247da2b05b.png">
+            <img src="https://backend.petsutra.com/app/uploads/26-02-21/6038fe215517d.png">
+            <img src="https://backend.petsutra.com/app/uploads/16-09-21/61432b27c05f4.jpg">
+            <img src="https://backend.petsutra.com/app/uploads/01-02-21/6018033100d26.png">
+            <img src="https://backend.petsutra.com/app/uploads/06-08-20/5f2bb683ac30d.png">
+            <img src="https://backend.petsutra.com/app/uploads/01-06-19/5cf247eb1657d.png">
+            <img src="https://backend.petsutra.com/app/uploads/11-06-19/5cff4e7f5e0c0.png">
+            <img src="https://backend.petsutra.com/app/uploads/07-04-22/624ec3c8ef2f9.png">
+            <img src="https://backend.petsutra.com/app/uploads/28-09-19/5d8f2868ad254.jpg">
+            <img src="https://backend.petsutra.com/app/uploads/08-06-20/5eddd252dddf2.png">
+            <img src="https://backend.petsutra.com/app/uploads/01-06-19/5cf247da2b05b.png">
+            <img src="https://backend.petsutra.com/app/uploads/01-06-19/5cf2482c6caf4.png">
+            <img src="https://backend.petsutra.com/app/uploads/17-04-21/607a83271abe1.png">
+            <img src="https://backend.petsutra.com/app/uploads/03-04-21/60686afe54de7.png">
+            <img src="https://backend.petsutra.com/app/uploads/01-06-19/5cf2476c3ac07.png">
+        </div>
+    </div>
+    <div class="container-fluid footer">
+        <div class="row bg-dark">
+            <div class="col-md-3">
+                <div class="bg-dark footer-flex">
+                    <div class="col">
+                        <!-- <h1 class="fs-1" ><i class="fa fa-graduation-cap fa" aria-hidden="true" style="color:#04AA6D;padding-right: 20%;margin-left:5%;margin-top: 10px;font-size: 30px;"<p>EDUCAT</p></i><i></i></h1> -->
+                        <img src="https://www.marshallspetzone.com/img/marshallspetzone-logo-1551438443.jpg"
+                            class="logo" alt="" style="margin-bottom:10px">
+                        <p style="color:rgb(148, 147, 147);">Your Profile
+                            COPS Rewards Program
+                            Wishlist
+                            Your Orders
+                            PetZone Wallet</p>
+                        <h5 style="font-family: Haettenschweiler;letter-spacing:1.5px;color:rgb(148, 147, 147);">FOLLOW
+                            US</h5>
+                        <div class="icons">
+                            <a href=""><i class="fa fa-facebook"></i></a>
+                            <a href=""><i class="fa fa-rss"></i></a>
+                            <a href=""><i class="fa fa-google-plus"></i></a>
+                            <a href=""><i class="fa fa-pinterest-p"></i></a>
+                            <a href=""><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="bg-dark footer-flex">
+                    <div class="col">
+                        <h1 class="fs-2">GET IN TOUCH</h1>
+                        <p style="color:rgb(148, 147, 147);"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;
+                            +91&nbsp;1234567890</p>
+                        <p style="color:rgb(148, 147, 147);"><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;
+                            marshallpetzone@gmail.com</p>
+                        <p style="color:rgb(148, 147, 147);"><i class="fa-solid fa-globe"></i>&nbsp;&nbsp;
+                            www.petsZone.com</p>
+                        <p style="color:rgb(148, 147, 147);"><i class="fa-solid fa-location-pin"></i>&nbsp;&nbsp;
+                            Delhi,India</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="bg-dark footer-flex">
+                    <div class="col">
+                        <h1 class="fs-2">USEFUL LINKS</h1>
+                        <p> <a href=""><i class="fa-solid fa-angle-right"></i>&nbsp;&nbsp; Shop for Dogs</a> </p>
+                        <p> <a href=""><i class="fa-solid fa-angle-right"></i>&nbsp;&nbsp; Shop for Cats</a> </p>
+                        <p> <a href=""><i class="fa-solid fa-angle-right"></i>&nbsp;&nbsp; Pet Parent</a> </p>
+                        <p> <a href=""><i class="fa-solid fa-angle-right"></i>&nbsp;&nbsp; Support</a> </p>
+                        <p> <a href=""><i class="fa-solid fa-angle-right"></i>&nbsp;&nbsp; Terams & Conditions</a> </p>
+                        <p> <a href=""><i class="fa-solid fa-angle-right"></i>&nbsp;&nbsp; Privacy Policy</a> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="bg-dark footer-flex">
+                    <div class="col">
+                        <form action="" style="display: flex;justify-content:center;align-items:center;">
+                            <input class="inp" type="email" name="" id="" style="color:black" ;>
+                            <button class="btn btn-success"
+                                style="width:auto;height:30px; color:black;font-family:Verdana, Geneva, Tahoma, sans-serif;font-weight:bolder;">Subscribe</button>
+                        </form>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="fs-2">INSTAGRAM</h1>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="col-md-4">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1vf9CfGgC3PVpUFGnJeGjs194C-q1H3I1Dw&usqp=CAU"
+                                            style="height:60px">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKRL3Fz9OLfv6XC4nUqcLZPzmvVD44TfwiHw&usqp=CAU"
+                                            style="height:60px">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvEZU9fdo6h1C5friz2uHt6UlbKPNaWXx15g&usqp=CAU"
+                                            style="height:60px">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <h1 class="fs-2"></h1>
+                                    <div class="col-md-4">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1vf9CfGgC3PVpUFGnJeGjs194C-q1H3I1Dw&usqp=CAU"
+                                            style="height:60px">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKRL3Fz9OLfv6XC4nUqcLZPzmvVD44TfwiHw&usqp=CAU"
+                                            style="height:60px">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvEZU9fdo6h1C5friz2uHt6UlbKPNaWXx15g&usqp=CAU"
+                                            style="height:60px">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid foot">
+        <p style="padding: 0; margin:0; font-size:16px; color:#ddd"> © <span style="color:white">Site Name</span> All
+            Rights Reserved &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy policy &nbsp; Terms and Conditions</p>
+    </div>
+
+
+</body>
+
+</html>
